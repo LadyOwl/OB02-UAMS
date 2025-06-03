@@ -69,4 +69,3 @@ user_list.append(user4)
 print("User list:")
 for user in user_list:
     print(user)
-
