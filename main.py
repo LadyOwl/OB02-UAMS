@@ -22,6 +22,12 @@ class User():
     def __str__(self):
         return f"User ID: {self.__user_id}\nName: {self.__name}\nAccess Level: {self.__access_level}\n"
 
+class Admin(User):
+    def __init__(self, user_id, name, admin_level):
+        super().__init__(user_id, name)
+        self.__admin_level = admin_level
+        self.__access_level = "admin"
 
+    
 
 
