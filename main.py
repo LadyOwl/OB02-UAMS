@@ -54,4 +54,19 @@ class Admin(User):
 
 
 
+user_list = []
+
+user1 = User(1, "Anastasya")
+user2 = User(2, "Valeriy")
+user3 = User(3, "Alexandr")
+user4 = User(4, "Irina")
+
+user_list.append(user1)
+user_list.append(user2)
+user_list.append(user3)
+user_list.append(user4)
+
+print("User list:")
+for user in user_list:
+    print(user)
 
