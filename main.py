@@ -19,6 +19,9 @@ class User:
     def set_id(self, new_id):
         self.__user_id = new_id
 
+    def has_access(self):
+        return self.__access_level == "admin"
+
     def __str__(self):
         return f"User ID: {self.__user_id}\nName: {self.__name}\nAccess Level: {self.__access_level}\n"
 
