@@ -1,4 +1,4 @@
-class User():
+class User:
     def __init__(self, user_id, name ):
         self.__user_id = user_id
         self.__name = name
@@ -37,10 +37,11 @@ class Admin(User):
     def set_admin_level(self, level):
         self.__admin_level = level
 
-    def add_user(self, user_id, name):
-        print(f"Admin {self.__name} added user {name} with ID {user_id}")
+    def add_user(self, user_list, user):
+        user_list.append(user)
+        print(f"Admin {self.get_name()} added user {user.get_name()} with ID {user.get_id()}")
 
-    def remove_user(self, user_id):
+    def remove_user(self, user_list, user_id):
         for user in user_list:
             if user.get_id() == user_id:
                 user_list.remove(user)
